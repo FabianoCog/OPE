@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/texto_inicial"
+        android:layout_width="193dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:text="Acesse sua conta!"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/texto_inicialLogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Acesse sua conta!" />
+        android:layout_height="35dp"
+        android:text="Entre com usuário e senha!" />
 
     <TextView
         android:id="@+id/Usuário"
@@ -36,16 +45,59 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/botao_login"
-        android:layout_width="match_parent"
+        android:layout_width="221dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
         android:text="Login" />
 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagem_loginLeft"
+            android:layout_width="189dp"
+            android:layout_height="202dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/hairstylist"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imagem_loginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="202dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:baselineAligned="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/haircut"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
     <ImageView
-        android:id="@+id/imagem_login"
-        android:layout_width="match_parent"
-        android:layout_height="311dp" />
+        android:id="@+id/imagem_loginBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:baselineAligned="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/beforecut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </LinearLayout>
+

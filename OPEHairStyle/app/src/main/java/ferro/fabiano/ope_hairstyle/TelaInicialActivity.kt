@@ -29,6 +29,8 @@ class TelaInicialActivity : AppCompatActivity() {
         }
 
         supportActionBar?.title = "Horários"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -45,7 +47,7 @@ class TelaInicialActivity : AppCompatActivity() {
         } else if (id == R.id.action_config) {
             Toast.makeText(this, "Clicou Config", Toast.LENGTH_SHORT).show()
 
-        }
+        } else if (id == android.R.id.home){ finish() }
 
 
 

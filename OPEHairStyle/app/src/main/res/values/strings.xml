@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Hair Style</string>
-    <string name="mensagem_inicial">Bem vindo ao Hair Style, entre com usuário e senha!</string>
+    <string name="mensagem_inicial">Bem vindo ao Hair Style</string>
+    <string name="mensagem_login">Entre com usuário e senha</string>
     <string name="action_buscar">Buscar</string>
     <string name="action_config">Configurar</string>
     <string name="action_atualizar">atualizar</string>
